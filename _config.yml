@@ -1,11 +1,7 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl:     ""
-url:         "http://pixyll.com"
-date_format: "%b %-d, %Y"
+title: SlideWiki Developr Blog
+description: Information for Developers at Slidewiki
+url: https://slidewiki.github.io
 
 # Google services
 google_verification:
@@ -107,10 +103,15 @@ markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     4
+paginate: 5
+paginate_path: "/blog/page:num/"
+
 sass:
   compressed: true
 gems:
+  - jekyll-feed
+  - jekyll-paginate
+
   - jekyll-paginate
   - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
